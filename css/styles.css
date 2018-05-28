@@ -1,0 +1,281 @@
+@charset "utf-8";
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*general reset*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+*:focus {
+	outline:0;
+}
+body, html {
+	height:100%;
+	width:100%;
+	min-height:400px;
+	min-width: 320px;
+	background-color:#fff;
+}
+#wrapper {
+	height:100%;	
+	min-width:320px;
+	min-height: 400px;
+}
+section {
+	width: 100%;
+	overflow: auto;
+}
+img {
+	display: block;
+}
+section, div, header, footer, nav {
+	overflow: auto;
+}
+/* float and clear */
+/**************************/
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+
+/* Typography */
+/**************************/
+
+body,td,th, h1, h2, h3, h4, h5, p  {
+	font-family: 'lato', sans-serif;
+	font-weight: 300;
+	font-size: 100%;
+	color: #fff;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, .75);	
+}
+h1, h2, h3, h4, h5 {
+	margin-bottom: 20px;
+}
+h1 {
+	font-size: 2em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+.hero-content h1 {
+    font-size: 4em;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: .9em;
+    margin-right: 10px;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+h3 {
+	font-size: 1.125em;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+p {	
+	font-size: 1em;
+	margin-bottom: 1em;
+}
+strong {
+	display: inline-block;
+	font-family: 'lato', sans-serif;	
+	font-weight: 700;
+	font-style: none;
+	margin-bottom:1em;
+}
+em {
+	font-family: 'lato', sans-serif;	
+	font-weight: 300;
+	font-style: italic;
+	/*color: #f47c20;*/
+}
+a {
+	-webkit-transition-duration: .25s;
+	-moz-transition-duration: .25s;
+	-ms-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+	text-decoration: none;
+	cursor:pointer;
+	cursor:hand; 
+	color: inherit;
+}
+a:hover {
+	color:#f47c20;	
+	text-decoration:none;
+}
+.button {
+	display: inline-block;
+	border: 1px solid #fff;
+	padding: .75em 1.25em;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+	background: #202025;
+	border-radius: 25px;
+}
+.button:hover {
+	background: rgba(255,255,255,1);
+	color: #343434;
+}
+ul {
+    list-style-position: inside;
+    margin-bottom: 30px;
+}
+.center {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.demo {
+	width:200px;
+}
+.help {
+	width: 200px;
+	border: 1px solid #fff;
+	background: none;
+}
+.underline, .underline:hover {
+	text-decoration: underline;
+}
+p.code {
+	display: block;
+	padding: .5em;
+	background: #343434;
+	color: #fff;
+	/*** in case you want to have a scroll bar and nowrap ***/
+	/*white-space: nowrap;
+	overflow-x: scroll;*/
+}
+.whitetext {
+	color: #fff;
+}
+.margincenter {
+	margin-left:auto !important;
+	margin-right:auto !important;
+	float: none !important;
+}
+
+/* Structural Styles */
+/**************************/
+
+/** Nav Styles **/
+/**************************/
+
+.slicknav_menu {
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: rgba(0,0,0,0);
+}
+.slicknav_nav {
+	position: relative;
+	top: 0;
+	right: 30px;
+	background: #202025;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	padding: 10px 15px;
+}
+#main-nav {
+	display: none;
+	list-style: none;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&1+0,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+#main-nav li {
+	display: inline-block;
+	margin-right: 30px;
+}
+#main-nav li:last-of-type {
+	margin-right: 0;
+}
+#menu {
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	#main-nav {
+		display: block;
+	}
+	.slicknav_menu {
+		display: none;
+	}
+}
+
+/** Layout Styles **/
+/**************************/
+#wrapper {
+	background: #202025;
+}
+.content{
+	position: relative;
+	width: calc(100% - 30px);
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 150px 0;
+}
+.two-column {
+	margin: 0 15px;
+	width: calc(50% - 30px);
+	float: left;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Page Styles */
+/**************************/
+
+.front-page-hero {
+	display: block;
+	background-image: url("../images/milky-way-bg.jpg");
+	background-position: bottom center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 80%;
+
+}
+.front-page-hero .content {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hero-content {
+	display: inline-block;
+	margin: 0 auto;
+	display: flex;
+	align-items: flex-start;
+}
+.hero-content ul {
+	display: inline-block;
+	list-style: none;
+}
+.content i {
+	position: absolute;
+	bottom: 15px;
+	left: calc(50% - 16px);
+}
