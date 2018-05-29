@@ -83,7 +83,7 @@ h2 {
 }
 h3 {
 	font-size: 1.125em;
-	font-weight: 100;
+	font-weight: 400;
 	text-transform: uppercase;
 }
 p {	
@@ -121,7 +121,7 @@ a:hover {
 .button {
 	display: inline-block;
 	border: 1px solid #fff;
-	padding: .75em 1.25em;
+	padding: .75em 1.25em 1em;
 	text-align: center;
 	color:#fff;
 	text-decoration: none;
@@ -182,15 +182,17 @@ p.code {
 	top: 0;
 	right: 0;
 	background: rgba(0,0,0,0);
+	z-index: 1000;
 }
 .slicknav_nav {
-	position: relative;
-	top: 0;
+	position: fixed;
+	top: 50px;
 	right: 30px;
 	background: #202025;
 	border: 1px solid #fff;
 	border-radius: 15px;
 	padding: 10px 15px;
+	z-index: 2000;
 }
 #main-nav {
 	display: none;
@@ -204,6 +206,7 @@ p.code {
 	background: -webkit-linear-gradient(top, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+	z-index: 1001;
 }
 #main-nav li {
 	display: inline-block;
@@ -215,6 +218,7 @@ p.code {
 #menu {
 	display: none;
 }
+
 @media screen and (min-width: 768px) {
 	#main-nav {
 		display: block;
@@ -234,15 +238,36 @@ p.code {
 	width: calc(100% - 30px);
 	max-width: 1280px;
 	margin: 0 auto;
-	padding: 150px 0;
+	padding: 50px 0;
 }
-.two-column {
-	margin: 0 15px;
-	width: calc(50% - 30px);
-	float: left;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.two-column, .three-column {
+	padding: 15px;
+	width: calc(100% - 30px);
+
+}
+
+@media screen and (min-width: 768px) {
+	.content {
+		padding: 150px 0;
+	}
+	.two-column {
+		float: left;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+		width: calc(50% - 30px);
+	}
+	.three-column {
+		float: left;
+		padding: 15px;
+		width: calc(33.33% - 30px);
+		height: 100%;
+		flex: 1;
+	}
+}
+.accent-color {
+	background-color: #655856;
 }
 
 /* Page Styles */
@@ -278,4 +303,48 @@ p.code {
 	position: absolute;
 	bottom: 15px;
 	left: calc(50% - 16px);
+}
+.hex-art {
+	width: 75%;
+	max-width: 400px;
+	height: auto;
+	margin: 0 auto;
+}
+.mission h2 {
+	text-align: center;
+}
+.mission p {
+	margin-bottom: 2em;
+}
+.mission button {
+	display: inherit;
+	margin: 0 auto;
+}
+.feature-content {
+	display: flex;
+	flex-direction: row;
+}
+.feature-box {
+	background-color: #fff;
+	height: 100%;
+}
+.feature-box img {
+	width: 100%;
+	height: auto;
+}
+.feature-box h3 {
+	padding: 20px 40px;
+	margin: 0;
+	color: #343434;
+	text-shadow: none;
+}
+.feature-box p {
+	padding: 0px 40px 20px;
+	color: #343434;
+	text-shadow: none;
+	margin-bottom: 0;
+}
+.feature-box button {
+	display: inherit;
+	margin: 0 auto 20px;
 }
