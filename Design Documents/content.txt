@@ -1,0 +1,8 @@
+front page:
+
+- mission statement:
+- CTA's
+-- Image (400x300 min)
+-- Title
+-- Description
+
