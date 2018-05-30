@@ -401,11 +401,8 @@ footer .content {
 .social-media {
 	text-align: center;
 }
-.social-media a{
-	margin-right: 15px;
-}
-.social-media a:last-child {
-	margin-right: 0px;
+.social-media a i{
+	margin: 15px;
 }
 @media screen and (min-width: 768px) {
 	.logos img {
