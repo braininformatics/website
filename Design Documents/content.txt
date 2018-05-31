@@ -1,8 +1,35 @@
-front page:
+-- front page: --
 
 - mission statement:
+The ORIGN (co-)laboratory develop statistical methods and neuroinformatics tools to investigate neuroscience, neurology, and psychiatry applications with brain imaging and imaging genetics data. The emphasis is on reproducible and open science. We want to produce and evaluate reusable research objects. We also do research on and develop the architecture and design of cyber-infrastructures, research platforms, communication standards and best pracrices to foster the emergence of FAIR, reproducible and publishable research objectives. Through our research projects we work to make the culture of research eveolve to be more open and reusable.
+
 - CTA's
 -- Image (400x300 min)
 -- Title
 -- Description
+-- Link: (to internal page or external source)
+
+-- Image (400x300 min)
+-- Title
+-- Description
+-- Link: (to internal page or external source)
+
+-- Image (400x300 min)
+-- Title
+-- Description
+-- Link: (to internal page or external source)
+
+- Logos (add more if needed)
+-- Image (as a jpg)
+-- Links
+
+- Social Media
+-- Facebook link:
+-- Twitter link:
+-- Linkedin link:
+-- Github link:
+-- (add more if needed)
+
+-- about page --
+
 
