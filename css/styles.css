@@ -35,9 +35,6 @@ section {
 img {
 	display: block;
 }
-section, div, header, footer, nav {
-	overflow: auto;
-}
 /* float and clear */
 /**************************/
 .left {
@@ -253,6 +250,13 @@ p.code {
 /**************************/
 #wrapper {
 	background: #202025;
+}
+.wrapper {
+	overflow: auto;
+	background: #202025;
+}
+#wrapper section, #wrapper div {
+	overflow: auto;
 }
 .content{
 	position: relative;

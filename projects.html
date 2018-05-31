@@ -21,31 +21,17 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/jquery.slicknav.js"></script>
 		<script src="js/jquery.matchHeight-min.js" type="text/javascript"></script> 
-		<script src="js/jquery-smoothscroll.js"></script>
-	
+<!-- <script src="js/jquery-1.11.2.min.js"></script> -->
+<script src="js/jquery.easing.1.3.js"></script>
 <script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+$( document ).ready( function() {
+  $('a.ease').bind('click',function(event){
+    var $anchor = $(this);
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 100, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+    $('html, body').stop().animate({
+      scrollTop: $($anchor.attr('href')).offset().top
+    }, 1250,'easeInOutExpo');
+    // event.preventDefault();
   });
 });
 </script>
@@ -53,131 +39,131 @@ $(document).ready(function(){
 	</head>
 	<body>
 		<div id="wrapper">
-			<nav>
-		        <ul id="main-nav" class="menu">
-			        <li class="active"><a href="index.html">home</a></li>
-			        <li><a href="about.html">about</a></li>
-			        <li><a href="projects.html">projects</a></li>
-			        <li><a href="products.html">products</a></li>
-			        <li><a href="people.html">people</a></li>
-			        <li><a href="contact.html">contact</a></li>
-			        <li><a href="careers.html">careers</a></li>
-		        </ul>
+			<div class="wrapper">
+				<nav>
+			        <ul id="main-nav" class="menu">
+				        <li class="active"><a href="index.html">home</a></li>
+				        <li><a href="about.html">about</a></li>
+				        <li><a href="projects.html">projects</a></li>
+				        <li><a href="products.html">products</a></li>
+				        <li><a href="people.html">people</a></li>
+				        <li><a href="contact.html">contact</a></li>
+				        <li><a href="careers.html">careers</a></li>
+			        </ul>
 
-		        <!-- slicknav -->
-		        <div id="menu">
-		            <ul class="menu">
-				        <li class="active"><a href="index.html">Home</a></li>
-				        <li><a href="about.html">About</a></li>
-				        <li><a href="projects.html">Projects</a></li>
-				        <li><a href="products.html">Products</a></li>
-				        <li><a href="people.html">People</a></li>
-				        <li><a href="contact.html">Contact</a></li>
-				        <li><a href="careers.html">Careers</a></li>
-		            </ul>
-		        </div>
-			</nav>
+			        <!-- slicknav -->
+			        <div id="menu">
+			            <ul class="menu">
+					        <li class="active"><a href="index.html">Home</a></li>
+					        <li><a href="about.html">About</a></li>
+					        <li><a href="projects.html">Projects</a></li>
+					        <li><a href="products.html">Products</a></li>
+					        <li><a href="people.html">People</a></li>
+					        <li><a href="contact.html">Contact</a></li>
+					        <li><a href="careers.html">Careers</a></li>
+			            </ul>
+			        </div>
+				</nav>
 
-			<header class="page-banner">
-				<div class="content">
-					<div class="page-banner-content">
-						<h1>ORIGN</h1>
-						<ul>
-							<li>open</li>
-							<li>reproducible</li>
-							<li>imaging</li>
-							<li>genomics</li>
-							<li>neuroinformatics</li>
-						</ul>	
-					</div>
-				</div>	
-			</header>
-
-			<section>
-				<div class="content">
-					<div class="one-columny">
-						<h2 class="center">Projects</h2>
-						<div class="flex-array">
-							<a href="#proj1"><img src="images/project-datalad.png" class="project"></a>
-							<a href="#proj2" class="project">
-								<h2 class="project">Project Name</h2>
-							</a>
+				<header class="page-banner">
+					<div class="content">
+						<div class="page-banner-content">
+							<h1>ORIGN</h1>
+							<ul>
+								<li>open</li>
+								<li>reproducible</li>
+								<li>imaging</li>
+								<li>genomics</li>
+								<li>neuroinformatics</li>
+							</ul>	
 						</div>
 					</div>	
-				</div>
-			</section>
-			
-			<section class="accent-color">
-				<div class="content">
-				<!-- individual project -->
-					<div id="proj1" class="project-detail">
-						<div class="three-column">
-							<img src="images/project-datalad.png" class="project-image">
-						</div>
-						<div class="three-column">
-							<h3>Datalad</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae nisl orci. Duis vel ligula nec ligula ullamcorper imperdiet. Nulla id accumsan tellus. Nam dignissim lacus non diam varius, posuere varius lectus viverra. Nullam feugiat pulvinar justo eget mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sit amet nibh vel mi sodales laoreet vel vitae nulla. </p>
-						</div>
-						<div class="three-column">
-							<h4>Features:</h4>
-							<ul>
-								<li>Data Discovery</li>
-								<li>Data Consumption</li>
-								<li>Data Publication</li>
-								<li>For Git Users</li>
-								<li>Peproducible Science</li>
-								<li>Automation and Control of Data Aquisition</li>
-							</ul>
-							<button class="button auto-center">webpage</button>
-						</div>
+				</header>
+				<section>
+					<div class="content">
+						<div class="one-columny">
+							<h2 class="center">Projects</h2>
+							<div class="flex-array">
+								<a href="#proj1" class="ease"><img src="images/project-datalad.png" class="project"></a>
+								<a href="#proj2" class="project ease">
+									<h2 class="project">Project Name</h2>
+								</a>
+							</div>
+						</div>	
 					</div>
+				</section>
+				
+				<section class="accent-color">
+					<div class="content">
+					<!-- individual project -->
+						<div id="proj1" class="project-detail">
+							<div class="three-column">
+								<img src="images/project-datalad.png" class="project-image">
+							</div>
+							<div class="three-column">
+								<h3>Datalad</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae nisl orci. Duis vel ligula nec ligula ullamcorper imperdiet. Nulla id accumsan tellus. Nam dignissim lacus non diam varius, posuere varius lectus viverra. Nullam feugiat pulvinar justo eget mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sit amet nibh vel mi sodales laoreet vel vitae nulla. </p>
+							</div>
+							<div class="three-column">
+								<h4>Features:</h4>
+								<ul>
+									<li>Data Discovery</li>
+									<li>Data Consumption</li>
+									<li>Data Publication</li>
+									<li>For Git Users</li>
+									<li>Peproducible Science</li>
+									<li>Automation and Control of Data Aquisition</li>
+								</ul>
+								<button class="button auto-center">webpage</button>
+							</div>
+						</div>
 
-					<div id="proj2" class="project-detail">
-						<div class="three-column">
-							<h2 class="project-image">Project Name</h2>
-						</div>
-						<div class="three-column">
-							<h3>Project name</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae nisl orci. Duis vel ligula nec ligula ullamcorper imperdiet. Nulla id accumsan tellus. Nam dignissim lacus non diam varius, posuere varius lectus viverra. Nullam feugiat pulvinar justo eget mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sit amet nibh vel mi sodales laoreet vel vitae nulla. </p>
-						</div>
-						<div class="three-column">
-							<h4>Features:</h4>
-							<ul>
-								<li>Data Discovery</li>
-								<li>Data Consumption</li>
-								<li>Data Publication</li>
-								<li>For Git Users</li>
-								<li>Peproducible Science</li>
-								<li>Automation and Control of Data Aquisition</li>
-							</ul>
-							<button class="button auto-center">webpage</button>
+						<div id="proj2" class="project-detail">
+							<div class="three-column">
+								<h2 class="project-image">Project Name</h2>
+							</div>
+							<div class="three-column">
+								<h3>Project name</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae nisl orci. Duis vel ligula nec ligula ullamcorper imperdiet. Nulla id accumsan tellus. Nam dignissim lacus non diam varius, posuere varius lectus viverra. Nullam feugiat pulvinar justo eget mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin sit amet nibh vel mi sodales laoreet vel vitae nulla. </p>
+							</div>
+							<div class="three-column">
+								<h4>Features:</h4>
+								<ul>
+									<li>Data Discovery</li>
+									<li>Data Consumption</li>
+									<li>Data Publication</li>
+									<li>For Git Users</li>
+									<li>Peproducible Science</li>
+									<li>Automation and Control of Data Aquisition</li>
+								</ul>
+								<button class="button auto-center">webpage</button>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-			
+				</section>
+				
 
-			<footer>
-				<div class="content">
-					<div class="two-of-three-column">
-						<p>in association with:</p>
-						<div class="logos">
-							<a href="http://mcgill.ca"><img src="images/logo-mcgill.jpg"></a>
-							<a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg"></a>
-							<a href="http://mcin.ca"><img src="images/logo-mcin.jpg"></a>
-							<a href="https://www.mcgill.ca/bic/"><img src="images/logo-bic.jpg"></a>
+				<footer>
+					<div class="content">
+						<div class="two-of-three-column">
+							<p>in association with:</p>
+							<div class="logos">
+								<a href="http://mcgill.ca"><img src="images/logo-mcgill.jpg"></a>
+								<a href="https://www.mcgill.ca/neuro/"><img src="images/logo-neuro.jpg"></a>
+								<a href="http://mcin.ca"><img src="images/logo-mcin.jpg"></a>
+								<a href="https://www.mcgill.ca/bic/"><img src="images/logo-bic.jpg"></a>
+							</div>
 						</div>
+						<div class="three-column social-media">
+							<p>social media:</p>
+							<a href="http://facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>	
+							<a href="http://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
+							<a href="http://linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>	
+							<a href="http://github.com"><i class="fab fa-github-square fa-3x"></i></a>	
+						</div>					
 					</div>
-					<div class="three-column social-media">
-						<p>social media:</p>
-						<a href="http://facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>	
-						<a href="http://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
-						<a href="http://linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>	
-						<a href="http://github.com"><i class="fab fa-github-square fa-3x"></i></a>	
-					</div>					
-				</div>
-			</footer>
-			
+				</footer>
+			</div>
 		</div>
 
 
@@ -211,19 +197,8 @@ $(document).ready(function(){
 			}
 		  });
 		})
+
+
     	</script>
-
-		<script>
-			$( document ).ready( function() {
-			  $('a.ease').bind('click',function(event){
-			    var $anchor = $(this);
-
-			    $('html, body').stop().animate({
-			      scrollTop: $($anchor.attr('href')).offset().top
-			    }, 1250,'easeInOutExpo');
-			    event.preventDefault();
-			  });
-			});
-		</script>
   	</body>
 <html>
