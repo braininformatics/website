@@ -269,7 +269,7 @@ p.code {
 footer .content {
 	padding: 30px 0;
 }
-.one-column, .two-column, .three-column, .two-of-three-column {
+.one-column, .two-column, .three-column, .two-of-three-column, .four-column {
 	padding: 15px;
 	width: 100%;
 
@@ -513,7 +513,7 @@ footer .content {
 	color: #343434;
 	text-shadow: none;
 }
-.feature-box button {
+.feature-box button, .product-box button {
 	display: block;
 	margin: 0 auto 20px;
 	text-align: center;
@@ -562,3 +562,43 @@ footer .content {
 	max-width: 100%;
 	height: auto;
 }
+.product-box {
+	display: block;
+	width: calc(100% - 30px);
+	color: #343434;
+	background: #fff;	
+	margin: 0 auto 25px;
+}
+.product-box h3 {
+	color: #343434;
+	text-shadow: none;
+	padding: 20px 40px;
+	margin: 0;
+	font-weight: 400;
+}
+.product-box p {
+	color: #343434;
+	text-shadow: none;
+	padding: 0 40px 20px;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+.product-box img {
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 768px) {
+	.product-box {
+		float: left;
+		width: calc(33% - 30px);
+		margin: 15px;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.product-box {
+		float: left;
+		width: calc(25% - 30px);
+		margin: 15px;
+	}
+}
+

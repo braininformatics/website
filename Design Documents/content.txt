@@ -32,4 +32,35 @@ The ORIGN (co-)laboratory develop statistical methods and neuroinformatics tools
 
 -- about page --
 
+- Mission statement (title can be changed)
+-- Please fill out more information about ORIGN as well as any other info you'd like to share about the lab, the work, and so forth
+
+- Map
+-- Please go to ttps://www.google.com/maps/d/u/0/ and log in. Create a map and 'share' it. the embed link can replace the map below
+
+-- projects --
+
+- Project List:
+-- please supply me with images of the projects ORIGN is involved in
+
+- Project details
+-- Project name/image (can be the same as what appears on the project list
+-- Project details (written)
+-- Additional info (written, logos, or any other media)
+-- link for the button (if applicable)
+
+-- Products --
+
+- Product image 400wx300h
+- Product Title
+- Product Description
+- Product link/website
+
+-- People --
+
+-- Contact --
+
+-- Careers --
+
+
 
