@@ -65,6 +65,8 @@
 					</div>	
 				</header>
 
+<!-- I injected a reference to an older version of jquery here for the tab feature -->
+
 			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 			<script>
 				$( function() {
@@ -75,11 +77,15 @@
 					<div class="content">
 						<h2 class="center">People</h2>
 
+<!-- This section will be for the team members. Copy the whole 'people-box' div and its contents. The image should follow the 3x4.jpg template. The tabbed area should be labelled tabs# where the # is the next in sequece. The following ul>li hrefs should be labelled #tabs1 to 3 respectively. -->
+
 						<div class="people-box">
 							<div class="three-column">
 							<img src="images/people-jb.jpg">
 							</div>
 							<div class="two-of-three-column">
+								<h2>JB Poline</h2>
+								<p>Job Title</p>
 								<div id="tabs2">
 									<ul class="tab-container">
 										<li><a href="#tabs-1">Bio</a></li>
@@ -87,14 +93,30 @@
 										<li><a href="#tabs-3">Contact</a></li>
 									</ul>
 								  	<div id="tabs-1">
+								  		<h3>Bio</h3>
 										<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
 										</div>
 									<div id="tabs-2">
-										<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+										<h3>Projects</h3>
+										<ul>
+											<li><a href="http://google.com">Project link</a></li>
+											<li><a href="http://google.com">Project link</a></li>
+											<li><a href="http://google.com">Project link</a></li>
+										</ul>
 										</div>
 									<div id="tabs-3">
-										<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-										<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+										<h3>Contact</h3>
+										<ul>
+											<li><a href="mailto:someone@somewhere.com">email: someone@somewhere.com</a></li>
+											<li>Phone: 514.398.1234</li>
+										</ul>
+										<div class="social-media">
+											<p>social media:</p>
+											<a href="http://facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>	
+											<a href="http://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
+											<a href="http://linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>	
+											<a href="http://github.com"><i class="fab fa-github-square fa-3x"></i></a>	
+										</div>	
 									</div>
 								</div>
 							</div>
@@ -105,6 +127,8 @@
 							<img src="images/temp-image3x4.jpg">
 							</div>
 							<div class="two-of-three-column">
+								<h2>Full Name</h2>
+								<p>Job Title</p>
 								<div id="tabs2">
 									<ul class="tab-container">
 										<li><a href="#tabs-1">Bio</a></li>
@@ -112,15 +136,30 @@
 										<li><a href="#tabs-3">Contact</a></li>
 									</ul>
 								  	<div id="tabs-1">
+								  		<h3>Bio</h3>
 										<p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
 										</div>
 									<div id="tabs-2">
-										<p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+										<h3>Projects</h3>
+										<ul>
+											<li><a href="http://google.com">Project link</a></li>
+											<li><a href="http://google.com">Project link</a></li>
+											<li><a href="http://google.com">Project link</a></li>
+										</ul>
 										</div>
 									<div id="tabs-3">
-										<p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-										<p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-									</div>
+										<h3>Contact</h3>
+										<ul>
+											<li><a href="mailto:someone@somewhere.com">email: someone@somewhere.com</a></li>
+											<li>Phone: 514.398.1234</li>
+										</ul>
+										<div class="social-media">
+											<p>social media:</p>
+											<a href="http://facebook.com"><i class="fab fa-facebook-square fa-3x"></i></a>	
+											<a href="http://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
+											<a href="http://linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>	
+											<a href="http://github.com"><i class="fab fa-github-square fa-3x"></i></a>	
+										</div>	
 								</div>
 							</div>
 						</div>

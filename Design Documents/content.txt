@@ -58,9 +58,23 @@ The ORIGN (co-)laboratory develop statistical methods and neuroinformatics tools
 
 -- People --
 
+- Person Image 300x400
+- Name
+- Title
+-- Bio
+-- Project links
+-- contact info and links
+
 -- Contact --
 
+- mailto link
+- phone link
+
 -- Careers --
+
+- job title
+- job description
+- link target (website, mailto, etc)
 
 
 

@@ -285,9 +285,6 @@ footer .content {
 	}
 	.two-column {
 		float: left;
-		display: flex;
-		align-items: center;
-		justify-content: center;
 		padding: 15px;
 		width: 50%;
 	}
@@ -302,6 +299,12 @@ footer .content {
 		padding: 15px;
 		width: 66.66%;
 		height: 100%;
+	}
+	.flex {
+		float: left;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 .accent-color {
@@ -605,6 +608,7 @@ footer .content {
 	border: 1px solid #fff;
 	border-radius: 25px;
 	padding: 15px;
+	margin-bottom: 100px;
 }
 .people-box img {
     width: 100%;
@@ -612,10 +616,7 @@ footer .content {
     height: auto;
     margin: 0 auto;
 }
-.w3-border {
-	max-height: 350px;
-}
-.w3-container h2 {
+.people-box h2 {
 	margin-bottom: 0;
 }
 .job-title {
@@ -624,11 +625,42 @@ footer .content {
 .tab-container {
     color: #fff!important;
     background-color: #000!important;
-    border-radius: 15px;
+    /*border-radius: 25px;*/
     list-style: none;
-    padding: 15px;
     width: 100%;
 }
 .tab-container li {
 	display: inline-block;
+	padding: 15px;
+}
+.tab-container li:hover {
+	background-color: rgba(255,255,255,.5);
+/*	border-radius: 25px;*/
+}
+/*.tab-container li:first-child {
+	margin-left: 15px;
+}*/
+.contact-info {
+	overflow: auto;
+}
+.contact-info, .contact-info ul {
+	list-style: none;
+	margin-bottom: 15px;
+}
+.icon-left {
+	display: inline-block;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+.contact-info p {
+	display: inline-block;
+	float: left;
+}
+.career-info {
+	list-style: none;
+	overflow: auto;
+}
+.career-info li{
+	margin-bottom: 50px;
+	overflow: auto;
 }
